@@ -1,0 +1,174 @@
+@charset "euc-kr";
+
+/* common */
+*{margin:0;padding:0;}
+html, body{font-family:Malgun Gothic,'¸¼Àº °íµñ',Arial,sans-serif;font-size:23px;color:#000;letter-spacing:-0.02em;line-height:1.25;-webkit-text-size-adjust: none;-moz-text-size-adjust: none;-ms-text-size-adjust: none;}
+p,dl,dt,dd,li,ul,ol,blockquote,form,em,caption{margin:0;padding:0;list-style:none;}
+h3, h4{font-size:inherit;font-weight:normal;}
+a:link , a:visited, a:active, a:hover{color:#000;text-decoration:none;}
+a,a:hover{color:#000;text-decoration:none;}
+img, fieldset{margin:0;padding:0;border:0;}
+img{vertical-align:middle;}
+caption, legend{display:none;}
+em{font-style:normal;}
+label{cursor:pointer;}
+button{outline:none;border:none;background-color:transparent;vertical-align:middle;}
+button img{vertical-align:top;}
+/* ÀÎÇ² */
+textarea.area{padding:30px;resize:none;border:1px solid #dcdcdc;vertical-align:top;}
+select,textarea{font-family:"Malgun Gothic","¸¼Àº °íµñ";font-size:16px;color:#000;background:#fff;}
+label{cursor:pointer;}
+label,
+label input{vertical-align:top;}
+label span{color:#000;font-size:16px;}
+input.txt{height:42px;border:1px solid #aeaeae;color:#000;font-family:"Malgun Gothic","¸¼Àº °íµñ";font-size:16px;line-height:42px;text-indent:10px;*text-indent:0;vertical-align:top;box-sizing:border-box;letter-spacing:-0.075em;}
+input.chk{width:22px;height:18px;opacity:0;filter:alpha(opacity=0);}
+input.rdi{width:24px;height:24px;color:#000;font-size:16px;opacity:0;filter:alpha(opacity=0);}
+label.checkbox{display:inline-block;zoom:1;*display:inline;height:22px;line-height:18px;vertical-align:middle;}
+label.radiobox{display:inline-block;zoom:1;*display:inline;height:24px;line-height:24px;vertical-align:middle;}
+label.radiobox,
+label.checkbox{margin-left:20px;}
+label.radiobox.lb,
+label.checkbox.lb,
+label.radiobox:first-child,
+label.checkbox:first-child{margin-left:0 !important;}
+label.radiobox span,
+label.checkbox span{/* position:relative;top:-2px;*/margin-left:10px;}
+label.radiobox{background:url(http://image.career.co.kr/career_new/event/2021/seniorinternship/pop_form.png) no-repeat 0 0;}
+label.radiobox.on{background-position:0 -54px;}
+label.checkbox{background:url(http://image.career.co.kr/career_new/event/2021/seniorinternship/pop_form.png) no-repeat 0 -108px;}
+label.checkbox.on{background-position:0 -156px;}
+span.selectbox{position:relative;display:inline-block;*display:inline;zoom:1;height:42px;overflow:hidden;*margin-left:5px;vertical-align:middle;}
+span.selectbox span{display:block;height:auto;overflow:hidden;padding:11px 38px 13px 10px;background:#fff url(http://image.career.co.kr/career_new/event/2021/seniorinternship/pop_form.png) no-repeat 95% -195px;border:1px solid #aeaeae;color:#000;font-size:16px;line-height:1;letter-spacing:-0.075em;}
+span.selectbox select{z-index:1;position:absolute;left:0;top:0;width:100%;height:100%;margin:0;padding:0;opacity:0;filter:alpha(opacity=0);}
+
+/* layout */
+body{position:relative;min-width:1089px;word-break:keep-all;overflow-x:hidden}
+
+/* contents */
+.topgnb-wrap-event{position:fixed;z-index:2;width:100%;background-color:#fff;border-bottom:1px solid #231f20;box-shadow:0 5px 0 rgba(000, 000, 000, 0.1);-webkit-box-shadow:0 5px 0 rgba(000, 000, 000, 0.1);-moz-box-shadow:0 5px 0 rgba(000, 000, 000, 0.1)-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=90, Color='#000')";
+ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=90, Color='#000');}
+.topgnb-wrap-event .topgnb-event-inner{zoom:1;width:1000px;margin:0 auto;position:relative;height:100px;}
+.topgnb-wrap-event .topgnb-event-inner .logo-area{position:absolute;left:0;top:20px;}
+.topgnb-wrap-event .topgnb-event-inner .logo-area h1{line-height:1;}
+.topgnb-wrap-event .topgnb-event-inner .logo-area h1 .top{position:absolute;right:-99px;bottom:-8px;}
+.topgnb-wrap-event .topgnb-event-inner .menu-area{position:absolute;right:0;top:55px;}
+.topgnb-wrap-event .topgnb-event-inner .menu-area li{float:left;margin-left:45px;}
+.topgnb-wrap-event .topgnb-event-inner .menu-area li:first-child{margin-left:0;}
+.topgnb-wrap-event .topgnb-event-inner .menu-area li a{display:block;height:23px;background:url(../images/gnb.png) no-repeat;font-size:0;}
+.topgnb-wrap-event .topgnb-event-inner .menu-area li.m1 a{width:85px;background-position:0 0;}
+.topgnb-wrap-event .topgnb-event-inner .menu-area li.m2 a{width:85px;background-position:-134px 0;}
+.topgnb-wrap-event .topgnb-event-inner .menu-area li.m3 a{width:85px;background-position:-267px 0;}
+.topgnb-wrap-event .topgnb-event-inner .menu-area li.m4 a{width:85px;background-position:-399px 0;}
+.topgnb-wrap-event .topgnb-event-inner .menu-area li.on a{color:#ff4200;}
+.topgnb-wrap-event .topgnb-event-inner .menu-area .m1.on a{background-position:0 -24px;}
+.topgnb-wrap-event .topgnb-event-inner .menu-area .m2.on a{background-position:-134px -24px;}
+.topgnb-wrap-event .topgnb-event-inner .menu-area .m3.on a{background-position:-267px -24px;}
+.topgnb-wrap-event .topgnb-event-inner .menu-area .m4.on a{background-position:-399px -24px;}
+/* .topgnb-wrap-event .topgnb-event-inner .notice-area{position:fixed;right:-43px;top:0px;z-index:1;} */
+.topgnb-wrap-event .topgnb-event-inner .notice-area{position:fixed;right:0;top:101px;z-index:1;}
+
+.event-wrap{position:relative;width:100%;height:100%;padding-top:100px;}
+.event-inner > div:first-child{padding-top:0px;}
+.event-inner > div{position:relative;padding:67px 0;margin:0 auto;vertical-align:top;}
+.event-inner h1,
+.event-inner h2{text-align:center;}
+.event-inner h1{padding:0 0 150px;}
+.event-inner #sec2  h1{padding:0 0 80px;}
+
+.sec0{height:845px;padding:0 !important; /* background:#d6f7eb url(http://image.career.co.kr/career_new/event/2021/seniorinternship/header_pattern.png) repeat-x left bottom;*/}
+.sec0 h1{padding:70px 0 0;}
+.sec0 .topvisual{position:relative;margin-top:0px;text-align:center; text-align: center; background: repeat center url(../images/bg.png); background-size: auto; height:845px;}
+.sec0 .topvisual img{vertical-align:top;text-align:center; margin-top:23px;}
+.sec0 .topvisual .btn_area {width:1000px;position:absolute;left:50%;bottom:10px;margin-left:-500px;font-size:0;background: url(http://image.career.co.kr/career_new/event/2021/seniorinternship/btn_line.jpg) repeat-x 50% 50%;}
+.sec0 .topvisual .btn_area button {width: 350px;margin:0 15px;}
+.sec0 .topvisual .btn_area button img {width:100%;}
+.apply_btn{display:inline-block; position: absolute; bottom: 50px; left: 50%; margin-left: -180px;}
+.apply_btn2{display:inline-block; position: absolute; bottom: 210px; left: 50%; margin-left: -180px;}
+.sec1{background-color: #f4faf8; text-align: center;}
+.sec1 ul{width:1089px;height:450px;margin:0 auto;background:url(http://image.career.co.kr/career_new/event/2021/seniorinternship/con1_img.png) no-repeat 50% 0;}
+.sec1 ul:after{content:"";display:block;clear:both;}
+.sec1 ul li{float:left;width:33.33%;height:438px;font-size:0;text-indent:-9999em;}
+.sec1 .tpImg1{}
+.sec1 .tpImg2{margin-top: 67px; position: relative;}
+.sec1 .tpImg2 .bt{position: absolute; background: rgba(255,255,255,0);     width: 221px; height: 60px; left: 50%; bottom: 36px; margin-left: -110px;}
+.sec2{background-color:#f0f4ff; text-align: center; padding-bottom: 150px !important;}
+.sec2 ul{width:1000px;height:507px;margin:0 auto;background:url(http://image.career.co.kr/career_new/event/2021/seniorinternship/con2_img1.png) no-repeat 50% 0;}
+.sec2 ul:after{content:"";display:block;clear:both;}
+.sec2 ul li{float:left;width:33.33%;height:478px;font-size:0;text-indent:-9999em;}
+.sec2 h2{padding:50px 0 30px;}
+.sec2 table{width:1002px;height:245px;margin:0 auto;background:url(http://image.career.co.kr/career_new/event/2021/seniorinternship/con2_img2.png) no-repeat 50% 0;}
+.sec2 table tr,
+.sec2 table td{font-size:0;}
+.sec2 p {font-size:0;}
+.sec2 .tpImg1{position: relative;}
+.sec2 .tpImg1 .bt1{position: absolute; background: rgba(255,255,255,0); width: 210px; height: 60px; left: 50%; bottom: 111px; margin-left: -226px;}
+.sec2 .tpImg1 .bt2{position: absolute; background: rgba(255,255,255,0); width: 210px; height: 60px; left: 50%; bottom: 111px; margin-left: 28px;}
+[class^="tpImg"]{width: 814px; margin-left: auto; margin-right: auto; text-align: center;}
+[class^="tpImg"] img{max-width: 100%;}
+.sec3{background-color:#f0f4ff; text-align: center; padding-top: 0 !important; padding-bottom:390px !important;}
+.sec4{background-color:#f0f4ff;}
+.sec4 .layoutBox{width:1034px;margin:0 auto;background:url(http://image.career.co.kr/career_new/event/2021/seniorinternship/con4_img.png) no-repeat 100% 27px;}
+.sec4 h2{padding:50px 0 30px;}
+.sec4 .tabArea{width:1001px;margin:0 auto;}
+.sec4 .tabArea ul{padding-bottom:20px;}
+.sec4 .tabArea ul:after{content:"";display:block;clear:both;}
+.sec4 .tabArea ul li{float:left;margin-left:5px;}
+.sec4 .tabArea ul li:first-child{margin-left:0;}
+.sec4 .tabArea ul li a{display:block;width:191px;height:73px;background:url(http://image.career.co.kr/career_new/event/2021/seniorinternship/con4_tab.png) no-repeat 0 0;font-size:0;}
+.sec4 .tabArea ul li:first-child a{background-position:0 0;}
+.sec4 .tabArea ul li a{background-position:-194px 0;}
+.sec4 .tabArea ul li:first-child.on a{background-position:0 -80px;}
+.sec4 .tabArea ul li.on a{background-position:-194px -80px;}
+.sec4 .tabArea .tabContents > div{display:none;}
+.sec4 .tabArea .tabContents > div:first-child{display:block;}
+.sec4 .tabArea .tabContents .tabInfo{width:1001px;margin:0 auto;background:url(http://image.career.co.kr/career_new/event/2021/seniorinternship/con4_tab_cont1.gif) no-repeat 0 0;}
+.sec4 .tabArea .tabContents .tabInfo table{width:100%;}
+.sec4 table{}
+.sec4 table tbody tr.last td {height:45px;}
+.sec4 table thead th{height:56px;}
+.sec4 table tbody td{height:44px;}
+.sec4 table tbody td a{display:block;height:100%;}
+.sec4 table tbody td a:hover{background-color:#2792ff;opacity:0.15;filter: alpha(opacity=15);}
+.sec4 table tr{font-size:0;text-indent:-9999em;}
+.sec4 .btnArea{padding-top:50px;text-align:center;}
+
+.btnTop{display:none;position:fixed;bottom:30px;right:30px;width:74px;height:77px;font-size:0;text-indent:-9999em;}
+
+/* popup style */
+.popup-wrap {z-index:9999;display:none;position:absolute;left:0;top:0;right:0;width:100%;}
+#popup-overlap {position:absolute;left:0;right:0;top:0;bottom:0;z-index:2;background:url("http://image.career.co.kr/career_new/event/2016/jobsavengers/bg_overlap.png") repeat 0 0;background-size:100% 100%;}
+/* .popup-wrap .dim {display:block;content:"";position:fixed;left:0;top:0;width:100%;height:100%;background:none;z-index:-1;cursor:pointer;} */
+.popup-inner {position:absolute;left:50%;top:140px;opacity:0;filter:alpha(opacity=0);}
+.popup-inner .close {position:absolute;right:-5px;top:-20px;}
+.popup-inner .title {zoom:1;width:100%;height:148px;background:url(../images/pop_bg_top.png) no-repeat -1px 0;}
+.popup-inner .title h2 {text-align: center; padding-top:30px;}
+.popup-apply .popup-inner {width:696px;margin-left:-348px;}
+.popup-apply .userinfo {height:450px;background:url(../images/pop_bg_body.png) no-repeat 0 -380px;}
+.popup-apply .userinfo .agreeArea{width:596px;padding:20px 0 0;margin:30px auto;border-top:1px solid #d1d1d1;}
+.popup-apply .userinfo .agreeArea label img{vertical-align:top;}
+.popup-apply .userinfo .agreeArea p{padding:5px 0 0 30px;}
+.popup-apply .userinfo .btnArea{position:absolute;height:97px;left:50%;bottom:-50px;margin-left:-145px;}
+
+.tblInput {position:relative;padding:15px 60px 0 58px;margin:0 auto;}
+.tblInput table {width:100%;}
+.tblInput th {text-align:left;line-height:42px;}
+.tblInput tr:first-child th,
+.tblInput tr:first-child td {padding-top:15px;border-top:1px solid #d1d1d1;}
+.tblInput:first-child {padding-top:0;}
+.tblInput:first-child tr:first-child th,
+.tblInput:first-child tr:first-child td {padding-top:15px;border-top:none;}
+.tblInput.type{padding:20px 50px 5px;}
+.tblInput.type tr:first-child th,
+.tblInput.type tr:first-child td {padding-top:0;}
+.tblInput td {}
+.tblInput td > div {padding:5px 0;font-size:16px;color:#000;line-height:38px;vertical-align:middle;}
+
+/* //CSS */
+.sec2 h2{display: none;}
+.sec2 table{height: 352px; margin-top: 63px;}
+
+
+
+
+.hidetxt{visibility: hidden; width: 0; height: 0; display: block; text-indent: -999em; font-size: 0; position: absolute; left: -999em; top: -999em;}
